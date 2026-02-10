@@ -12,11 +12,11 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/about-store.jpg"
+                src="/images/dentro.png"
                 alt="Loja Sol e Neve Caraguatatuba"
                 width={600}
                 height={500}
-                className="object-cover w-full h-[500px]"
+                className="object-cover w-full h-[400px] md:h-[900px] lg:h-[800px]"
               />
             </div>
             {/* Floating Card */}

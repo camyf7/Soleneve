@@ -18,7 +18,7 @@ export const categories: Category[] = [
     name: "Acais",
     slug: "acais",
     description: "O verdadeiro sabor da Amazonia em cada colherada",
-    image: "/images/categories/acai.jpg",
+    image: "/images/categories/acais (2).png",
     color: "#4a1942",
     products: [
       { name: "Acai com Iogurte Grego", slug: "acai-iogurte-grego", description: "Cremosidade do iogurte grego com o poder do acai" },
@@ -40,7 +40,7 @@ export const categories: Category[] = [
     name: "Aurus",
     slug: "aurus",
     description: "Linha premium com sabores sofisticados e exclusivos",
-    image: "/images/categories/aurus.jpg",
+    image: "/images/categories/aurus.png",
     color: "#c8a45a",
     products: [
       { name: "Pistache", slug: "aurus-pistache", description: "O nobre sabor do pistache premium" },
@@ -64,7 +64,7 @@ export const categories: Category[] = [
     name: "Bombonzinho",
     slug: "bombonzinho",
     description: "Bombons de sorvete cobertos com chocolate premium",
-    image: "/images/categories/bombonzinho.jpg",
+    image: "/images/categories/bombom.png",
     color: "#5c3317",
     products: [
       { name: "Bombom de Sorvete Pistache", slug: "bombom-pistache", description: "Pistache coberto com chocolate" },
@@ -75,7 +75,7 @@ export const categories: Category[] = [
     name: "Cone",
     slug: "cone",
     description: "Casquinhas crocantes recheadas com sorvete premium",
-    image: "/images/categories/cone.jpg",
+    image: "/images/categories/cone.png",
     color: "#d4903a",
     products: [
       { name: "Cone Mais Leite", slug: "cone-mais-leite", description: "Casquinha com sorvete de leite" },
@@ -86,7 +86,7 @@ export const categories: Category[] = [
     name: "Fit",
     slug: "fit",
     description: "Linha fitness com whey protein para quem cuida da saude",
-    image: "/images/categories/fit.jpg",
+    image: "/images/categories/fit.png",
     color: "#2d7d46",
     products: [
       { name: "Picole Whey Amendoim", slug: "fit-whey-amendoim", description: "Whey protein com pasta de amendoim" },
@@ -97,7 +97,7 @@ export const categories: Category[] = [
     name: "Frutas",
     slug: "frutas",
     description: "Sabores naturais feitos com frutas selecionadas",
-    image: "/images/categories/frutas.jpg",
+    image: "/images/categories/fruta.png",
     color: "#e67e22",
     products: [
       { name: "Abacaxi", slug: "frutas-abacaxi", description: "Refrescante picole de abacaxi" },
@@ -115,7 +115,7 @@ export const categories: Category[] = [
     name: "Kids",
     slug: "kids",
     description: "Diversao e sabor para a criancada",
-    image: "/images/categories/kids.jpg",
+    image: "/images/categories/kids.png",
     color: "#e84393",
     products: [
       { name: "Pegada Freddy", slug: "kids-pegada-freddy", description: "Formato divertido de pegada" },
@@ -132,7 +132,7 @@ export const categories: Category[] = [
     name: "Linha Chocoblito",
     slug: "linha-chocoblito",
     description: "Explosao de chocolate em formato compacto",
-    image: "/images/categories/chocoblito.jpg",
+    image: "/images/categories/chocoblito.png",
     color: "#3d1c02",
     products: [
       { name: "Chocoblito", slug: "chocoblito-original", description: "O classico Chocoblito" },
@@ -145,7 +145,7 @@ export const categories: Category[] = [
     name: "Paletas",
     slug: "paletas",
     description: "Paletas gourmet artesanais com recheio generoso",
-    image: "/images/categories/paletas.jpg",
+    image: "/images/categories/paletas.png",
     color: "#8e3a59",
     products: [
       { name: "Coco Bianco", slug: "paleta-coco-bianco", description: "Coco cremoso coberto de chocolate branco" },
@@ -156,10 +156,10 @@ export const categories: Category[] = [
     ],
   },
   {
-    name: "Picoles",
+    name: "Picolés",
     slug: "picoles",
     description: "Classicos picoles para refrescar seu dia",
-    image: "/images/categories/picoles.jpg",
+    image: "/images/categories/picoles (1).png",
     color: "#e74c3c",
     products: [
       { name: "Acai", slug: "picole-acai", description: "Picole cremoso de acai" },
@@ -184,7 +184,7 @@ export const categories: Category[] = [
     name: "Potes",
     slug: "potes",
     description: "Sorvetes premium em potes para toda a familia",
-    image: "/images/categories/potes.jpg",
+    image: "/images/categories/potes.png",
     color: "#2c3e50",
     products: [
       { name: "Acai Natural Pote", slug: "pote-acai-natural", description: "Acai natural puro no pote" },
@@ -209,7 +209,7 @@ export const categories: Category[] = [
     name: "Sobremesas",
     slug: "sobremesas",
     description: "Sobremesas especiais para momentos unicos",
-    image: "/images/categories/sobremesas.jpg",
+    image: "/images/categories/sobremesas.png",
     color: "#6c3483",
     products: [
       { name: "Brownie Chocolate Dubai Pistache", slug: "sobremesa-brownie-dubai", description: "Brownie com pistache estilo Dubai" },
@@ -234,7 +234,7 @@ export const categories: Category[] = [
     name: "Sorvetes Self Service",
     slug: "sorvetes-self-service",
     description: "Monte seu sorvete do jeito que voce quiser",
-    image: "/images/categories/selfservice.jpg",
+    image: "/images/categories/acais (1).png",
     color: "#16a085",
     products: [
       { name: "Acai com Sorbet de Maracuja", slug: "self-acai-maracuja", description: "Acai com refrescancia do maracuja" },
@@ -253,7 +253,7 @@ export const categories: Category[] = [
     name: "Speciale",
     slug: "speciale",
     description: "Sabores especiais de edicao limitada",
-    image: "/images/categories/speciale.jpg",
+    image: "/images/categories/speciale.png",
     color: "#8e44ad",
     products: [
       { name: "Strogonoff de Nozes", slug: "speciale-strogonoff-nozes", description: "Edicao limitada exclusiva" },
@@ -266,7 +266,7 @@ export const categories: Category[] = [
     name: "Zero Acucar",
     slug: "zero-acucar",
     description: "Todo sabor sem nenhum acucar adicionado",
-    image: "/images/categories/zero-acucar.jpg",
+    image: "/images/categories/zeroa.png",
     color: "#27ae60",
     products: [
       { name: "Aurus Goldko Chocolate", slug: "zero-goldko-chocolate", description: "Chocolate premium sem acucar" },
@@ -286,7 +286,7 @@ export const categories: Category[] = [
     name: "Zero Lactose",
     slug: "zero-lactose",
     description: "Deliciosos sabores sem nenhuma lactose",
-    image: "/images/categories/zero-lactose.jpg",
+    image: "/images/categories/zerolactose.png",
     color: "#2980b9",
     products: [
       { name: "Acai com Sorbet de Maracuja", slug: "zl-acai-maracuja", description: "Acai refrescante sem lactose" },
