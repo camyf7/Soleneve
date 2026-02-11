@@ -155,30 +155,25 @@ export default function CategoryDetail({ category }: { category: Category }) {
                 >
                   {/* Color Header */}
                   <div
-                    className="relative h-44 flex items-center justify-center overflow-hidden"
-                    style={{
-                      background: `linear-gradient(135deg, ${category.color}22, ${productColor}33)`,
-                    }}
-                  >
-                    {/* Abstract ice cream shape */}
-                    <div className="relative">
-                      <div
-                        className="w-24 h-24 rounded-full opacity-80 group-hover:scale-110 transition-transform duration-500 shadow-lg"
-                        style={{
-                          background: `linear-gradient(135deg, ${category.color}, ${productColor})`,
-                        }}
-                      />
-                      <div
-                        className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-8 h-12 rounded-b-lg opacity-60"
-                        style={{ backgroundColor: `${category.color}88` }}
-                      />
-                    </div>
+  className="relative h-44 flex items-center justify-center overflow-hidden"
+  style={{
+    background: `linear-gradient(135deg, ${category.color}22, ${productColor}33)`,
+  }}
+>
+  <Image
+    src={product.image}
+    alt={product.name}
+    width={140}
+    height={140}
+    className="object-contain group-hover:scale-110 transition-transform duration-500"
+  />
 
-                    {/* Index Badge */}
-                    <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-white/80 flex items-center justify-center text-xs font-bold text-[#1a0a10]">
-                      {String(index + 1).padStart(2, "0")}
-                    </div>
-                  </div>
+  {/* Index Badge */}
+  <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-white/80 flex items-center justify-center text-xs font-bold text-[#1a0a10]">
+    {String(index + 1).padStart(2, "0")}
+  </div>
+</div>
+
 
                   {/* Content */}
                   <div className="p-5">

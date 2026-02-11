@@ -2,6 +2,7 @@ export interface Product {
   name: string;
   slug: string;
   description?: string;
+  image: string;
 }
 
 export interface Category {
@@ -21,19 +22,19 @@ export const categories: Category[] = [
     image: "/images/categories/acais (2).png",
     color: "#4a1942",
     products: [
-      { name: "Acai com Iogurte Grego", slug: "acai-iogurte-grego", description: "Cremosidade do iogurte grego com o poder do acai" },
-      { name: "Acai com Sorbet de Maracuja", slug: "acai-sorbet-maracuja", description: "Refrescancia tropical com maracuja" },
-      { name: "Acai", slug: "acai", description: "O classico acai puro e cremoso" },
-      { name: "Acai com Guarana", slug: "acai-guarana", description: "Energia dobrada com guarana" },
-      { name: "Acai com Ninho", slug: "acai-ninho", description: "Suavidade do leite ninho com acai" },
-      { name: "Acai Natural", slug: "acai-natural", description: "100% natural, sem adicao de acucar" },
-      { name: "Acai Natural Pote", slug: "acai-natural-pote", description: "Acai natural no pote para levar" },
-      { name: "Acai Leitinho", slug: "acai-leitinho", description: "Cremoso com toque de leite condensado" },
-      { name: "Acai Zero", slug: "acai-zero", description: "Todo sabor sem acucar" },
-      { name: "Acai Tradicional", slug: "acai-tradicional", description: "Receita tradicional consagrada" },
-      { name: "Acai c/ Banana", slug: "acai-banana", description: "Combinacao classica com banana" },
-      { name: "Acai c/ Morango", slug: "acai-morango", description: "Frescor do morango com acai" },
-      { name: "Acai c/ Pasta de Amendoim", slug: "acai-pasta-amendoim", description: "Proteina e sabor juntos" },
+      { name: "Acai com Iogurte Grego", slug: "acai-iogurte-grego", description: "Cremosidade do iogurte grego com o poder do acai", image: "/images/products/acai-iorgute-grego (1).png" },
+      { name: "Acai com Sorbet de Maracuja", slug: "acai-sorbet-maracuja", description: "Refrescancia tropical com maracuja", image: "/images/products/acai-sorbet-maracuja.png" },
+      { name: "Acai", slug: "acai", description: "O classico acai puro e cremoso", image: "/images/products/acai.png" },
+      { name: "Acai com Guarana", slug: "acai-guarana", description: "Energia dobrada com guarana", image: "/images/products/acai-guarana.png" },
+      { name: "Acai com Ninho", slug: "acai-ninho", description: "Suavidade do leite ninho com acai", image: "/images/products/acai-ninho.png" },
+      { name: "Acai Natural", slug: "acai-natural", description: "100% natural, sem adicao de acucar", image: "/images/products/acai-natural.png" },
+      { name: "Acai Natural Pote", slug: "acai-natural-pote", description: "Acai natural no pote para levar", image: "/images/products/acai-natural-pote.png" },
+      { name: "Acai Leitinho", slug: "acai-leitinho", description: "Cremoso com toque de leite condensado", image: "/images/products/acai-leitinho.png" },
+      { name: "Acai Zero", slug: "acai-zero", description: "Todo sabor sem acucar", image: "/images/products/acai-zero.png" },
+      { name: "Acai Tradicional", slug: "acai-tradicional", description: "Receita tradicional consagrada", image: "/images/products/acai-tradicional.png" },
+      { name: "Acai c/ Banana", slug: "acai-banana", description: "Combinacao classica com banana", image: "/images/products/acai-banana.png" },
+      { name: "Acai c/ Morango", slug: "acai-morango", description: "Frescor do morango com acai", image: "/images/products/acai-morango.png" },
+      { name: "Acai c/ Pasta de Amendoim", slug: "acai-pasta-amendoim", description: "Proteina e sabor juntos", image: "/images/products/acai-amendoim.png" },
     ],
   },
   {
