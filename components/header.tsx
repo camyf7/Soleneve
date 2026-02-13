@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { SiIfood } from "react-icons/si"; // Import do ícone do iFood
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,40 +19,36 @@ export default function Header() {
 
   return (
     <header
-  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-    bg-[#1a0a10]
-    ${isScrolled ? "shadow-lg py-2" : "py-4"}
-  `}
->
-
-
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
+        bg-[#1a0a10]
+        ${isScrolled ? "shadow-lg py-2" : "py-4"}
+      `}
+    >
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-<Link href="/" className="flex items-center gap-3 group">
-  <div className="relative">
-    <div className="w-12 h-12 rounded-full bg-[#d41d51] flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform duration-300">
-      <Image
-        src="/logo.png"
-        alt="Logo Sol & Neve"
-        width={290}
-        height={40}
-        className="object-contain"
-        priority
-      />
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="relative">
+            <div className="w-12 h-12 rounded-full bg-[#d41d51] flex items-center justify-center shadow-lg overflow-hidden group-hover:scale-110 transition-transform duration-300">
+              <Image
+                src="/logo.png"
+                alt="Logo Sol & Neve"
+                width={290}
+                height={40}
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
 
-    </div>
-  </div>
-
-  <div className="flex flex-col">
-    <span className="text-white font-serif text-xl font-bold tracking-tight leading-tight">
-      Sol & Neve
-    </span>
-    <span className="text-[#FFD700] text-[10px] font-sans font-semibold tracking-[0.2em] uppercase">
-      Caraguatatuba
-    </span>
-  </div>
-</Link>
-
+          <div className="flex flex-col">
+            <span className="text-white font-serif text-xl font-bold tracking-tight leading-tight">
+              Sol & Neve
+            </span>
+            <span className="text-[#FFD700] text-[10px] font-sans font-semibold tracking-[0.2em] uppercase">
+              Caraguatatuba
+            </span>
+          </div>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-3">
@@ -73,26 +70,17 @@ export default function Header() {
         </nav>
 
         {/* CTA + iFood */}
-<div className="hidden lg:flex items-center gap-3">
-  <a
-    href="https://www.ifood.com.br/delivery/caraguatatuba-sp/sorveteria-sol--neve----caragua-centro/478c0603-4ca3-4de5-8c8a-d136fc94cafa"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 bg-[#EA1D2C] hover:bg-[#c91724] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[#EA1D2C]/30 hover:-translate-y-0.5"
-  >
-    {/* iFood icon (simplificado) */}
-    <svg
-      className="w-4 h-4"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M3 3h18v2H3V3zm2 4h14l-1.5 14h-11L5 7zm4 2v8h2V9H9zm4 0v8h2V9h-2z" />
-    </svg>
-    Peça pelo iFood
-  </a>
-</div>
-
+        <div className="hidden lg:flex items-center gap-3">
+          <a
+            href="https://www.ifood.com.br/delivery/caraguatatuba-sp/sorveteria-sol--neve----caragua-centro/478c0603-4ca3-4de5-8c8a-d136fc94cafa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-[#EA1D2C] hover:bg-[#c91724] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[#EA1D2C]/30 hover:-translate-y-0.5"
+          >
+            <SiIfood className="w-4 h-4" /> {/* Ícone do iFood */}
+            Peça pelo iFood
+          </a>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -102,13 +90,19 @@ export default function Header() {
         >
           <div className="flex flex-col gap-1.5">
             <span
-              className={`w-6 h-0.5 bg-white rounded transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""}`}
+              className={`w-6 h-0.5 bg-white rounded transition-all duration-300 ${
+                isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
+              }`}
             />
             <span
-              className={`w-6 h-0.5 bg-white rounded transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : ""}`}
+              className={`w-6 h-0.5 bg-white rounded transition-all duration-300 ${
+                isMobileMenuOpen ? "opacity-0" : ""
+              }`}
             />
             <span
-              className={`w-6 h-0.5 bg-white rounded transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+              className={`w-6 h-0.5 bg-white rounded transition-all duration-300 ${
+                isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
             />
           </div>
         </button>
@@ -131,27 +125,19 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-             className="text-black hover:text-gray py-3 px-4 rounded-lg hover:bg-white/10 transition-all duration-300 font-medium"
- 
+              className="text-white hover:text-gray py-3 px-4 rounded-lg hover:bg-white/10 transition-all duration-300 font-medium"
             >
               {link.label}
             </Link>
           ))}
           <a
-    href="https://www.ifood.com.br/delivery/caraguatatuba-sp/sorveteria-sol--neve----caragua-centro/478c0603-4ca3-4de5-8c8a-d136fc94cafa"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 bg-[#EA1D2C] hover:bg-[#c91724] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[#EA1D2C]/30 hover:-translate-y-0.5"
-  >
-           <svg
-      className="w-4 h-4"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M3 3h18v2H3V3zm2 4h14l-1.5 14h-11L5 7zm4 2v8h2V9H9zm4 0v8h2V9h-2z" />
-    </svg>
-            Peça pelo Ifood
+            href="https://www.ifood.com.br/delivery/caraguatatuba-sp/sorveteria-sol--neve----caragua-centro/478c0603-4ca3-4de5-8c8a-d136fc94cafa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-[#EA1D2C] hover:bg-[#c91724] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[#EA1D2C]/30 hover:-translate-y-0.5"
+          >
+            <SiIfood className="w-4 h-4" /> {/* Ícone do iFood */}
+            Peça pelo iFood
           </a>
         </nav>
       </div>

@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+import PromocoesSection from "@/components/promocoes-section";
 import CategoriesSection from "@/components/categories-section";
 import AboutSection from "@/components/about-section";
 import CtaSection from "@/components/cta-section";
@@ -14,6 +15,7 @@ export default function Home() {
       
       <main>
       <CategoriesSection />
+      <PromocoesSection />
       <AboutSection />
       <CtaSection />
       <Footer />
