@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata, Viewport } from "next";
 import { Poppins, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Head from 'next/head';
 
 const _poppins = Poppins({
   subsets: ["latin"],
@@ -15,10 +16,8 @@ const _playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Sol & Neve Caraguatatuba - Sorvetes Artesanais",
-  description:
-    "A melhor sorveteria de Caraguatatuba! Sorvetes artesanais, acai, paletas, sobremesas e muito mais. Sol & Neve - Todo dia, sabor e alegria.",
-  keywords:
-    "sorvete, caraguatatuba, sol e neve, acai, paleta, picole, sobremesa, sorveteria",
+  description: "A melhor sorveteria de Caraguatatuba! Sorvetes artesanais, acai, paletas, sobremesas e muito mais.",
+  keywords: "sorvete, caraguatatuba, sol e neve, acai, paleta, picole, sobremesa, sorveteria",
 };
 
 export const viewport: Viewport = {
@@ -34,6 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+       
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
