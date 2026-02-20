@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { SiIfood } from "react-icons/si"; // Import do ícone do iFood
+import { SiIfood } from "react-icons/si"; 
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -125,7 +125,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-white hover:text-gray py-3 px-4 rounded-lg hover:bg-white/10 transition-all duration-300 font-medium"
+              className="text-black hover:text-gray py-3 px-4 rounded-lg hover:bg-white/10 transition-all duration-300 font-medium"
             >
               {link.label}
             </Link>

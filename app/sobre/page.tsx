@@ -41,7 +41,7 @@ export default function SobrePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/about-store.jpg"
+                src="/images/iara (2).png"
                 alt="Loja Sol e Neve"
                 width={600}
                 height={450}

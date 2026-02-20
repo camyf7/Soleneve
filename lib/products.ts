@@ -247,7 +247,7 @@ export const categories: Category[] = [
       { name: "Cookies zero Acucar", slug: "self-cookies-zero", description: "Cookies sem acucar", image: "/images/products/cookies-zero-bola.png" },
       { name: "Chocolate Zero", slug: "self-chocolate-zero", description: "Chocolate intenso sem acucar", image: "/images/products/chocolate-zero-bola.png" },
       { name: "Baunilha com Morango", slug: "self-baunilha-morango", description: "Clássico sabor de baunilha com morango", image: "/images/products/baunilha-zero-bola.png" },
-      {name: "Uva", slug: "self-uva", description: "Doce e refrescante", image: "/images/products/uva-bola.png" },
+      { name: "Uva", slug: "self-uva", description: "Doce e refrescante", image: "/images/products/uva-bola.png" },
       { name: "Tapioca com Coco", slug: "self-tapioca-coco", description: "Sabor brasileiro autentico", image: "/images/products/tapioca (2).png" },
       { name: "Tangerina", slug: "self-tangerina", description: "Citrico e refrescante", image: "/images/products/tangerina-bola.png" },
       { name: "Morangos Silvestres", slug: "self-morangos-silvestres", description: "Morango silvestre delicado", image: "/images/products/morangos-silvestres-bola.png" },

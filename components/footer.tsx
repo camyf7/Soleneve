@@ -188,7 +188,7 @@ export default function Footer() {
                   />
                 </svg>
                 <span className="text-white/60 text-sm leading-relaxed">
-                  Seg - Dom: 10h - 22h
+                  Seg - Dom: 12h - 23:30h
                 </span>
               </li>
             </ul>
